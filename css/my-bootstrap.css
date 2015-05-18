@@ -1,0 +1,38 @@
+
+/* We are going to follow the https://color.adobe.com/Firenze-color-theme-24198/ color pattern */
+
+
+body {
+    background: transparent;
+    background-color: transparent;
+}
+
+.header{
+    height: 40px;
+}
+.navbar-default {
+   color: #FFFFFF;
+   background-color: #BF0426;
+   /*background-color: rgba(255, 0, 0, 0.4);*/
+}
+
+/*
+.btn-dine {
+    background-color: #B64926;
+}
+*/
+
+.jumbotron {
+    background-image: url("../img/jumbo-4.jpg");
+    -webkit-background-size: 100% 200%;
+    -moz-background-size: 100% 200%;
+     -o-background-size: 100% 200%;
+     background-size: 100% 200%;
+
+    height: 500px;
+    /*margin-top: -40px !important;*/
+}
+
+.navbar-inverse {
+    background-color: white;
+}
