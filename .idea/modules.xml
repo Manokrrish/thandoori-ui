@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$USER_HOME$/WebstormProjects/tandoori/.idea/tandoori.iml" filepath="$USER_HOME$/WebstormProjects/tandoori/.idea/tandoori.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/thandoori-ui.iml" filepath="$PROJECT_DIR$/.idea/thandoori-ui.iml" />
     </modules>
   </component>
 </project>
