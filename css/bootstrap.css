@@ -1396,8 +1396,11 @@ a.bg-info:hover {
 a.bg-warning:hover {
   background-color: #f7ecb5;
 }
+/*modified for thandoori*/
 .bg-danger {
   background-color: #f2dede;
+  border-radius: 3px;
+  text-align: center;
 }
 a.bg-danger:hover {
   background-color: #e4b9b9;

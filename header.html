@@ -1,3 +1,4 @@
+<div>
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -28,7 +29,7 @@
 
             <!-- login button -->
             <button type="button" class="btn btn-success navbar-btn btn-md navbar-right" data-target="#login-modal" data-toggle="modal">
-                <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Login
+                <span class="glyphicon glyphicon-user" aria-hidden="true"></span> {{loginUser}}
             </button>
 
         </div><!-- /.navbar-collapse -->
@@ -49,20 +50,22 @@
             </div>
             <div class="modal-body login-modal">
                 <div class="clearfix"></div>
-                <div id='social-icons-conatainer'>
-                    <div class='modal-body-left'>
+                <div id='social-icons-container'>
+                    <div ng-controller="loginController" class='modal-body-left'>
                         <div class="form-group">
-                            <input type="text" id="username" placeholder="Enter your name" value="" class="form-control login-field">
+                            <input type="text" ng-model="username" id="username" placeholder="Enter your name" value="" class="form-control login-field">
                             <i class="fa fa-user login-field-icon"></i>
                         </div>
 
                         <div class="form-group">
-                            <input type="password" id="login-pass" placeholder="Password" value="" class="form-control login-field">
+                            <input type="password" ng-model="loginpass" id="login-pass" placeholder="Password" value="" class="form-control login-field">
                             <i class="fa fa-lock login-field-icon"></i>
                         </div>
 
-                        <a href="#" class="btn btn-success modal-login-btn">Login</a>
+                        <a href="#" ng-click="loginClicked()" class="btn btn-success modal-login-btn">Login</a>
+                        <div ng-hide="loginStatus" class="bg-danger" id="loginResponse">{{loginMessage}}</div>
                         <a href="#" class="login-link text-center">Lost your password?</a>
+
                     </div>
 
                     <div class='modal-body-right'>
@@ -85,5 +88,21 @@
             <div class="modal-footer login_modal_footer">
             </div>
         </div>
+    </div>
+</div>
+    <div ng-controller="logoutController">
+    <div class="modal fade" ng-show="isActive" id="logout-modal" tabindex="-1" role="dialog"
+         aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header login_modal_header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h2 class="modal-title" id="LogoutModalLabel">Aren't you hungry?</h2>
+                </div>
+                <div class="modal-body login-modal">
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
 </div>
